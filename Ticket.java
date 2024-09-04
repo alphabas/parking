@@ -40,18 +40,12 @@ public class Ticket {
 
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
         return "Ticket{" +
                 "amount='" + amount + '\'' +
                 ", vehicle='" + vehicle +
                 ", enteringTime=" + enteringTime +
                 ", exitTiket=" + exitTiket +
                 '}';
-    }
-
-    public void setEnteringTime(java.util.Date now) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setEnteringTime'");
     }
 
 }
