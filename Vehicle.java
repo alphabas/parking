@@ -1,29 +1,16 @@
 public class Vehicle {
-    private String registerNumber;
-    private String category;
+    private String registrationNumber;
 
-    public String getRegisterNumber() {
-        return registerNumber;
+    public String getRegistrationNumber() {
+        return registrationNumber;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setRegistrationNumber(String registrationNumber) {
+        this.registrationNumber = registrationNumber;
     }
 
     public String getCategory() {
-        return category;
+        return "VEHICULE";
     }
 
-    public void setRegisterNumber(String registerNumber) {
-        this.registerNumber = registerNumber;
-    }
-
-    @Override
-    public String toString() {
-        // TODO Auto-generated method stub
-        return "Vehicle{" +
-                "registerNumber'" + registerNumber + '\'' +
-                ", category'" + category + '\'' +
-                '}';
-    }
 }

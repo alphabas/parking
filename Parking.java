@@ -1,14 +1,36 @@
 public class Parking {
 
+    static ParkingVehicleService parkingVehicleService = new ParkingVehicleService();
+
     public static void main(String[] args) {
+        processVehicles();
+
+    }
+
+    private static void processVehicles() {
         Vehicle vehicle = new Vehicle();
-        vehicle.setRegisterNumber("LS-324-PM");
-        vehicle.setCategory("CITADINE");
+        vehicle.setRegistrationNumber("LS-458-4P");
+        Ticket VehicleTicket = parkingVehicleService.processIncomingVehicule(vehicle);
 
-        ParkingVehicleService parkingVehicleService = new ParkingVehicleService();
-        Ticket ticket = parkingVehicleService.processIncomingVehicule(vehicle);
+        System.out.println(VehicleTicket);
 
-        System.out.println(ticket);
+        Vehicle bicycle = new Bicycle();
+        bicycle.setRegistrationNumber("F0-459-R9");
+        Ticket bicycletTicket = parkingVehicleService.processIncomingVehicule(bicycle);
+
+        System.out.println(bicycletTicket);
+
+        Vehicle car = new Car();
+        car.setRegistrationNumber("JDI-34-SOS");
+        Ticket carTicket = parkingVehicleService.processIncomingVehicule(car);
+
+        System.out.println(carTicket);
+
+        Vehicle train = new Train();
+        train.setRegistrationNumber("TRAIN-MZ-00012");
+        Ticket trainTicket = parkingVehicleService.processIncomingVehicule(train);
+
+        System.out.println(trainTicket);
 
     }
 
