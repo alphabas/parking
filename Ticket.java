@@ -1,16 +1,16 @@
 import java.sql.Date;
 
 public class Ticket {
-    private String amount;
+    private double amount;
     private Vehicle vehicle;
     private Date enteringTime;
     private Date exitTiket;
 
-    public String getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(String amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 

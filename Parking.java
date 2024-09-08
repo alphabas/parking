@@ -26,11 +26,9 @@ public class Parking {
 
         System.out.println(carTicket);
 
-        Vehicle train = new Train();
-        train.setRegistrationNumber("TRAIN-MZ-00012");
-        Ticket trainTicket = parkingVehicleService.processIncomingVehicule(train);
-
-        System.out.println(trainTicket);
+        System.out.println(parkingVehicleService.processExistingVehicle(VehicleTicket));
+        System.out.println(parkingVehicleService.processExistingVehicle(bicycletTicket));
+        System.out.println(parkingVehicleService.processExistingVehicle(carTicket));
 
     }
 
